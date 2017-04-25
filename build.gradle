@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath group: 'com.amazonaws', name: 'aws-java-sdk', version: '1.11.103'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+description = 'S3 Demo'
+group = 'de.xm.aws'
+version = '1.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compileOnly('org.projectlombok:lombok')
+    compile group: 'com.amazonaws', name: 'aws-java-sdk', version: '1.11.103'
+
+}
